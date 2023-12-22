@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5127C1C22B3535F4007FE188 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5127C1C12B3535F4007FE188 /* AnimalGridItemView.swift */; };
+		5127C1C82B354473007FE188 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5127C1C72B354473007FE188 /* Stickers.xcassets */; };
+		5127C1CC2B354473007FE188 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5127C1C52B354470007FE188 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		513C76E42B304E79006C1A46 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513C76E32B304E79006C1A46 /* VideoModel.swift */; };
 		513C76E62B304EB4006C1A46 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513C76E52B304EB4006C1A46 /* VideoListItemView.swift */; };
 		513C76E82B317743006C1A46 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513C76E72B317743006C1A46 /* VideoPlayerView.swift */; };
@@ -50,8 +52,35 @@
 		5158E7B92B2C48E600136AE7 /* ExternalWebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158E7B82B2C48E600136AE7 /* ExternalWebLinkView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5127C1CA2B354473007FE188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5158E7602B2AA77600136AE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5127C1C42B354470007FE188;
+			remoteInfo = Stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5127C1D02B354473007FE188 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5127C1CC2B354473007FE188 /* Stickers.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5127C1C12B3535F4007FE188 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
+		5127C1C52B354470007FE188 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5127C1C72B354473007FE188 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		5127C1C92B354473007FE188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		513C76E32B304E79006C1A46 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		513C76E52B304EB4006C1A46 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		513C76E72B317743006C1A46 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
@@ -107,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5127C1C62B354470007FE188 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				5127C1C72B354473007FE188 /* Stickers.xcassets */,
+				5127C1C92B354473007FE188 /* Info.plist */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
 		513C76E92B317917006C1A46 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				5158E76A2B2AA77600136AE7 /* Africa */,
+				5127C1C62B354470007FE188 /* Stickers */,
 				5158E7692B2AA77600136AE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				5158E7682B2AA77600136AE7 /* Africa.app */,
+				5127C1C52B354470007FE188 /* Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +279,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5127C1C42B354470007FE188 /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5127C1CD2B354473007FE188 /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				5127C1C32B354470007FE188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = 5127C1C52B354470007FE188 /* Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		5158E7672B2AA77600136AE7 /* Africa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5158E7762B2AA77B00136AE7 /* Build configuration list for PBXNativeTarget "Africa" */;
@@ -246,10 +301,12 @@
 				5158E7642B2AA77600136AE7 /* Sources */,
 				5158E7652B2AA77600136AE7 /* Frameworks */,
 				5158E7662B2AA77600136AE7 /* Resources */,
+				5127C1D02B354473007FE188 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5127C1CB2B354473007FE188 /* PBXTargetDependency */,
 			);
 			name = Africa;
 			productName = Africa;
@@ -266,6 +323,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					5127C1C42B354470007FE188 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					5158E7672B2AA77600136AE7 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -285,11 +345,20 @@
 			projectRoot = "";
 			targets = (
 				5158E7672B2AA77600136AE7 /* Africa */,
+				5127C1C42B354470007FE188 /* Stickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5127C1C32B354470007FE188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5127C1C82B354473007FE188 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5158E7662B2AA77600136AE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,7 +419,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5127C1CB2B354473007FE188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5127C1C42B354470007FE188 /* Stickers */;
+			targetProxy = 5127C1CA2B354473007FE188 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5127C1CE2B354473007FE188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHR59DG262;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Africa;
+				INFOPLIST_KEY_NSStickerSharingLevel = OS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanRicky.Africa.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5127C1CF2B354473007FE188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHR59DG262;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Africa;
+				INFOPLIST_KEY_NSStickerSharingLevel = OS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathanRicky.Africa.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5158E7742B2AA77B00136AE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,6 +654,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5127C1CD2B354473007FE188 /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5127C1CE2B354473007FE188 /* Debug */,
+				5127C1CF2B354473007FE188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5158E7632B2AA77600136AE7 /* Build configuration list for PBXProject "Africa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
